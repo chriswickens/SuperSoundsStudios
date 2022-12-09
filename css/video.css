@@ -1,0 +1,37 @@
+/*
+    video.css for video.html for Major Assignment 2
+    Purpose: video CSS for Major Assignment 2
+    PROG1245-22f-Sec5
+    
+    Revision History:
+        Chris Wickens, 2022.11.25: Created
+        Chris Wickens, 2022.11.26: Edited
+        Chris Wickens, 2022.12.08: Completed
+*/
+
+/* Main Article */
+
+article {
+  align-items: center;
+  background: #363662;
+}
+
+article h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  width: 30%;
+  text-align: center;
+  margin-left: 5.3%;
+}
+
+.articleContainer {
+  overflow: clip;
+  padding: 0 15px 0 15px;
+  height: auto;
+}
+
+#greenscreen {
+  border: 2px solid #b6b6b6;
+}

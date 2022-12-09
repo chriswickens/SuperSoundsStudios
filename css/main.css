@@ -1,0 +1,310 @@
+/*
+    main.css for Major Assignment 2
+    Purpose: Main CSS for Major Assignment 2
+    PROG1245-22f-Sec5
+    
+    Revision History:
+        Chris Wickens, 2022.11.25: Created
+        Chris Wickens, 2022.11.26: Edited
+        Chris Wickens, 2022.12.08: Completed
+*/
+
+html {
+    background-color: #000000;
+}
+
+body {
+    align-content: center;
+    border: 5px solid #ffffff;
+    margin: 0px auto;
+    color: #f0f8ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    background: #0F4C75;
+    width: 1000px;
+    height: auto;
+}
+
+/* Get the header in place and sized */
+header {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0.0px 5px 9px #000000;
+}
+
+/* Makes sure the a href doesn't extend beyond the rec image */
+header a{
+    display:contents;
+}
+
+
+/* Float the image to the LEFT side of the header */
+header img {
+    margin: 15px 30px;
+    background-color: #ff0000;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 3px 4px 20px #cf8585;
+    height: 100%;
+    animation: headerImg 1s infinite;
+    animation-direction: alternate;
+    transition: box-shadow 1s;
+}
+
+/* Very basic animation, but it was cool to learn how to use keyframes!
+I originally had this as a mouse hover for the image */
+@keyframes headerImg {
+    from {
+        box-shadow: 3px 4px 20px #cf8585;
+    }
+
+    to {
+        box-shadow: none;
+    }
+}
+
+/* Float the h1 header to the right */
+header h1 {
+    position: relative;
+    float: right;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #636363;
+    padding-right: 20%;
+    margin-top: 3.5%;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 100px;
+}
+
+/* Top Navigation Bar */
+.topNav {
+    clear: both;
+    padding: 0 0 10px 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.topNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+
+.topNav a {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    text-decoration: none;
+    width: 150px;
+    padding: 8px 10px 10px 10px;
+    background: #0D6986;
+    box-shadow: 2px 3px 1px #0000007e;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    transition: .18s;
+}
+
+/* Menu Main Items */
+.topNav ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: inline-block;   
+}
+
+/* Hover visuals */
+.topNav ul li a:hover {
+    color: #000000;
+    background-color: #F0A500;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 50px;
+    text-decoration: underline;
+}
+
+/* Makes the first menu show up */
+.topNav ul li:hover ul {
+    display: block;
+}
+
+/* First Sub menu */
+.topNav ul li ul {
+    align-items: center;
+    padding-left: 0px;
+    top: 150%;
+    width: 100px;
+    position: absolute;
+    z-index: 800;
+    display: none;
+}
+
+/* Second sub menu */
+.topNav ul li ul li {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+}
+
+/* Styles for the <a> in the SUB MENU */
+.topNav ul li ul li a {
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    background-color: #099994;
+}
+
+/*  Second Sub Menu */
+.topNav ul li ul li ul li a {
+    background-color: #477875;
+}
+
+/* Makes the second sub menu show up */
+.topNav ul li ul li:hover li {
+    display: block;
+}
+
+/* Position the menu */
+.topNav ul li ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0%;
+}
+
+/* Hover over the second sub menu */
+.topNav ul li ul li ul :hover {
+    background-color: #F0A500;
+    border-radius: 50px;
+}
+
+/* second sub menu section*/
+.topNav ul li ul li ul li {
+    position: relative;
+    z-index: 900;
+    display: none;
+}
+
+/* MAIN/ASIDE/FOOTER */
+
+/* Some colors for the main links/text */
+main a {
+    color: #ffc353;
+}
+
+main a:hover {
+    color: #f0f8ff;
+}
+
+article {
+    clear: both;
+    position: relative;
+    float: right;
+    width: 79%;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 5px solid #000000;
+    box-shadow: 2px 2px 10px #ffffff;
+}
+
+article h2 {
+    padding-left: 15px;
+}
+
+/* Aside Navigation relative, floating left */
+.asideNav {
+    float: left;
+    position: relative;
+    color: #000000;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    height: 600px;
+    width: 110px;
+    margin: 10px 30px 40px;
+    text-align: left;
+    background: #75a5c5;
+    box-shadow: 3px 4px 5px #3b3b3b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hover over images or <a> */
+.asideNav a:hover {
+    color: #b0e9ed;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 2px;
+}
+
+.asideNav a:hover img {    
+    background-color: #38121245;
+    box-shadow: 2px 2px 4px #301818 inset;
+    width: 50px;
+}
+
+/* Aside nav images */
+.asideNav img {    
+    border: 2px solid #000000;
+    padding: 5px 5px 5px 5px;
+    background: #53758b;
+    width: 45px;
+    background: linear-gradient(0deg, #53758b 8%, #14e1ee 47%);
+    box-shadow: 2px 2px 5px #000000;
+    transition: .2s;
+}
+
+.asideNav img:hover {
+    width: 50px;
+    background-color: #38121245;
+    box-shadow: 2px 2px 4px #000000 inset;
+    background: #53758b;
+    background: linear-gradient(0deg, #53758b 0%, #182b2c36 100%);
+}
+
+.asideNav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.asideNav ul a {
+    display: inline-block;
+    margin: 0px;
+    color: #ffffff;
+    margin-bottom: 30px;;
+    transition: .2s ;    
+}
+
+.asideNav ul a li {
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+
+/* Footer cleared */
+footer {
+    clear: both;
+    border-top: 2px solid #ffffff;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffc353
+}
+
+footer a:hover {
+    color: #745926
+}
+
+.footerDiv {
+    margin-top: 20px;
+    width: auto;
+}

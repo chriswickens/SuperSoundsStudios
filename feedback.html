@@ -1,0 +1,294 @@
+<!--
+    feedback.html
+    Title: SuperSounds Studios Main Page
+    Purpose: Major Assignment 2
+    PROG1245-22f-Sec5
+    Coder: Chris Wickens, 8827595
+    
+    Revision History:
+        Chris Wickens, 2022.11.25: Created
+        Chris Wickens, 2022.11.26: Edited
+        Chris Wickens, 2022.12.08: Completed
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>SuperSounds Studios: Feedback</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="SuperSounds Studios">
+    <meta name="description" content="SuperSounds Recording Studios Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/feedback.css">
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+
+        <a href="index.html">
+            <img src="images/rec.png" width="100" alt="Red record button graphic" title="SuperSounds Studios Home Link">
+        </a>
+
+        <h1>Welcome to SuperSounds Studios</h1>
+
+    </header>
+
+    <!--First Nav Button-->
+    <nav class="topNav">
+        <ul>
+            <li>
+                <a href="index.html" title="SuperSounds Studios Home Link">Home</a>
+            </li>
+
+            <!--Second Nav Button-->
+            <li>
+                <a href="image.html" title="SuperSounds Studios Images">images</a>
+                <ul>
+                    <li><a href="image.html#interfaces" title="SuperSounds Interface Images">Interfaces</a>
+                        <ul>
+                            <li>
+                                <a href="image.html#18i8" title="SuperSounds Studios Focusrite 18i8 image">Focusrite
+                                    18i8</a>
+                            </li>
+                            <li>
+                                <a href="image.html#18i20" title="SuperSounds Studios Focusrite 18i20 image">Focusrite
+                                    18i20</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="image.html#apple" title="SuperSounds Studios Computer">Computer</a>
+                        <ul>
+                            <li>
+                                <a href="image.html#apple" title="SuperSounds Studios Apple iMac">Apple iMac</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="image.html#jackson" title="SuperSounds Studios Guitars">Guitars</a>
+                        <ul>
+                            <li>
+                                <a href="image.html#jackson" title="SuperSounds Studios Jackson Guitars">jackson</a>
+                            </li>
+                            <li>
+                                <a href="image.html#ibanez" title="SuperSounds Studios Ibanez Guitars">ibanez</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <!--Third Nav Button-->
+            <li><a href="video.html" title="SuperSounds Studios Videos">videos</a>
+                <ul>
+                    <li>
+                        <a href="video.html#live" title="SuperSounds Studios Live Video">live</a>
+                    </li>
+                    <li>
+                        <a href="video.html#greenscreen" title="SuperSounds Studios Greenscreen Video">greenscreen</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!--Fourth Nav Button-->
+            <li>
+                <a href="table.html" title="SuperSounds Studios Clients">Clients</a>
+            </li>
+
+            <!--Fifth Nav Button-->
+            <li>
+                <a href="feedback.html" title="SuperSounds Studios Feedback">feedback</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Main-->
+    <main>
+
+        <article>
+
+            <h2>Feedback</h2>
+
+            <div class="articleContainer">
+
+                <form class="form" action="process-form" method="post">
+
+                    <fieldset class="formContainer">
+
+                        <legend>INSIGHTS</legend>
+
+                        <div>
+                            <label for="name">Name:</label>
+
+                            <!-- Required Entry and value constraints -->
+                            <input type="text" id="name" name="name" placeholder="Enter your name" minlength="5">
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="email">E-mail:</label>
+
+                            <input type="email" id="email" name="userEmail" placeholder="someone@home.com">
+                        </div>
+
+                        <br>
+                        <label for="dropdown">What can we help you with?</label>
+                        <br>
+                        <select name="options" id="dropdown">
+
+                            <optgroup label="Music">
+                                <option value="musicopt1">Recording</option>
+                                <option value="musicopt2">Mixing</option>
+                                <option value="musicopt3">Mastering</option>
+                            </optgroup>
+
+                            <optgroup label="Video">
+                                <option value="videoopt1">4K Production</option>
+                                <option value="videoopt2">Live Production</option>
+                                <option value="videoopt3">Greenscreen Production</option>
+                            </optgroup>
+
+                            <optgroup label="Pricing">
+                                <option value="pricingopt1">Cost per hour</option>
+                                <option value="pricingopt2">Cost per day</option>
+                                <option value="pricingopt3">Special request</option>
+                            </optgroup>
+                        </select>
+
+                        <p>
+                            <label class="commentslabel" for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" cols="50" rows="7"></textarea>
+                        </p>
+
+                        <fieldset>
+
+                            <legend><em>My website:</em></legend>
+
+                            <div>
+                                <input class="checkBox" type="checkbox" name="check1" id="check1">
+
+                                <label class="labelCheck" for="check1">Looks good</label>
+                            </div>
+
+                            <div>
+                                <input class="checkBox" type="checkbox" name="check2" id="check2">
+
+                                <label class="labelCheck" for="check2">Is well designed</label>
+                            </div>
+
+                            <div>
+                                <input class="checkBox" type="checkbox" name="check3" id="check3">
+
+                                <label class="labelCheck" for="check3">Uses good colours</label>
+                            </div>
+
+                            <div>
+                                <input class="checkBox" type="checkbox" name="check4" id="check4">
+
+                                <label class="labelCheck" for="check4">Is easy to navigate</label>
+                            </div>
+
+                            <div>
+                                <input class="checkBox" type="checkbox" name="check5" id="check5">
+
+                                <label class="labelCheck" for="check5">Has sweet button functionality</label>
+                            </div>
+
+                        </fieldset>
+
+                        <p>
+
+                        <fieldset>
+
+                            <legend><em>THINKING ABOUT IT</em></legend>
+
+                            <em>Will you visit my site again?</em>
+
+                            <p></p>
+
+                            <div class="radioYes">
+                                <input type="radio" name="radioyes" id="radioyes" checked>
+                                <label for="radioyes">Yes</label>
+                            </div>
+
+                            <div class="radioNo">
+                                <input type="radio" name="radiono" id="radiono">
+                                <label for="radiono">No</label>
+                            </div>
+
+                        </fieldset>
+
+                        </p>
+
+
+                        <p>                        
+                            <input class="submitButton" id="submit" type="submit" value="Submit" aria-label="Submit">  
+
+                            <input class="resetButton" id="reset" type="reset" value="Reset" aria-label="Reset">
+                        </p>
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <!-- Aside Floated LEFT in CSS-->
+    <aside class="asideNav">
+        <ul>
+            <a href="index.html" title="SuperSounds Homepage">
+                <img src="images/home.png" alt="Line drawing of house" width="20px">
+
+                <li>Home</li>
+            </a>
+
+            <a href="image.html" target="_blank" title="SuperSounds Images">
+                <img src="images/glasses.png" alt="Line drawing of glasses" width="20px">
+
+                <li>Images</li>
+            </a>
+
+            <a href="video.html" target="_blank" title="SuperSounds Videos">
+                <img src="images/video.png" alt="Line drawing of play button" width="20px">
+
+                <li>Videos</li>
+            </a>
+
+            <a href="table.html" target="_blank" title="SuperSounds Clients">
+                <img src="images/table.png" alt="Line drawing of a written list" width="20px">
+
+                <li>Clients</li>
+            </a>
+
+            <a href="feedback.html" target="_blank" title="SuperSounds Contact">
+                <img src="images/feedback.png" width="20px" alt="Line drawing of pencil and paper">
+
+                <li>Feedback</li>
+            </a>
+        </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerDiv">
+            &copy;2022 Chris Wickens, 8827595
+            <a href="mailto:cwickens7595@conestogac.on.ca">cwickens7595@conestogac.on.ca</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

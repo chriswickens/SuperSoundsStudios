@@ -1,0 +1,52 @@
+/*
+    table.css for table.html for Major Assignment 2
+    Purpose: table CSS for Major Assignment 2
+    PROG1245-22f-Sec5
+    
+    Revision History:
+        Chris Wickens, 2022.11.25: Created
+        Chris Wickens, 2022.11.26: Edited
+        Chris Wickens, 2022.12.08: Completed
+*/
+
+/* Main Article */
+
+.articleContainer {
+  padding: 0px 15px 20px 15px;
+  height: auto;
+}
+
+/* Table CSS */
+
+thead th {
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px 15px 15px 15px;
+  color: #b4d577;
+  background-color: #0e0d0d;
+}
+
+/* Table Data font color */
+td {
+  color: #ffffff
+}
+
+ /* Table Data hover */
+td:hover {
+  background-color: #3d1515;
+}
+
+/* Makes the table look nice */
+table, thead, tr, th, tbody, tr, td {
+  border-collapse: collapse;
+  width: 750px;
+  border: solid #00a7e9;
+  border-width: medium;
+  background-color: #10454a;
+}
+
+/* Pushes the text away and makes some space in the td */
+tr, td {
+  text-align: center;
+  padding: 20px;
+}

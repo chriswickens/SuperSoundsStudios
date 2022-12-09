@@ -1,0 +1,71 @@
+/*
+    image.css for image.html for Major Assignment 2
+    Purpose: image CSS for Major Assignment 2
+    PROG1245-22f-Sec5
+    
+    Revision History:
+        Chris Wickens, 2022.11.25: Created
+        Chris Wickens, 2022.11.26: Edited
+        Chris Wickens, 2022.12.08: Completed
+*/
+
+/* Main Article */
+
+article img {
+  display: block;
+}
+
+.articleTitleImage {
+  float: left;
+  width: 200px;
+  padding: 0px 0px 0px 0px;
+  margin: 10px 10px 30px 25px;
+  border: 2px solid #00f7ff86;
+  box-shadow: 5px 5px 10px #000000;
+}
+
+article h2 {
+  float: right;
+  position: relative;
+  width: 290px;
+  margin-top: 55px;
+}
+
+/* Title Image in Article */
+.imagesTitle {
+  display: flex;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  margin-bottom: 25px;
+}
+
+/* Main container for image grid */
+.gridContainer {
+  display: grid;
+  grid-gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Container for img */
+.images {
+  margin: 10px auto;
+  border: 5px solid rgb(0, 195, 255);
+  border-radius: 10px 50px 10px;
+  background-color: #182c3a;
+  box-shadow: 3px 4px 2px rgb(0, 0, 0);
+  padding: 30px;
+}
+
+/* Image visuals */
+.images img {
+  height: 200px;
+  width: 500px;
+  border: 5px double #0884a0;
+  padding: 5px;
+  object-fit: cover;
+}
+
+/* Adjust the figcaption for images */
+figcaption {
+  padding-top: 20px;
+  text-align: center;
+}

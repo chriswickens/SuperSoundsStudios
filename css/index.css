@@ -1,0 +1,28 @@
+/*
+    index.css for index.html for Major Assignment 2
+    Purpose: index CSS for Major Assignment 2
+    PROG1245-22f-Sec5
+    
+    Revision History:
+        Chris Wickens, 2022.11.25: Created
+        Chris Wickens, 2022.11.26: Edited
+        Chris Wickens, 2022.12.08: Completed
+*/
+
+/* Main Article */
+
+.articleImage {
+  float: left;
+  max-width: auto;
+  height: 200px;
+  margin-right: 20px;
+  shape-outside: polygon(102.06% -0.64%, 0.88% -0.36%, 0.71% 104.71%, 102.23% 106.77%);
+  border: 10px double #767676;
+  box-shadow: 3px 3px 5px #000000;
+}
+
+.articleContainer {
+  overflow: clip;
+  padding: 0 15px 0 15px;
+  height: 400px;
+}
